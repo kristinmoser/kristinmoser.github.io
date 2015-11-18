@@ -1,8 +1,4 @@
-#h1{
-	font-family: 'Arial';
-	font-size: 48px;
-	color: blue;
-}
+
 body{
 	background-color: white;
 }
@@ -10,17 +6,10 @@ body{
 #header{
 	font-family: Lobster;
 	text-align: center;
-	font-size: 36px;
+	font-size: 48px;
 	color: white;
-	background-color: #3ECB89;;
-}
-#header img {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	float: left;
-	padding-right: 20px;
-	padding-top: 5px;
+	background-color: #88F0EE;
+	height: 50%;
 }
 #title {
 	float: left;
@@ -36,11 +25,10 @@ body{
 }
 
 #nav {
-	padding: 0;
-	margin: 0;
 	width: 100%;
-	border-bottom:8px dotted  #1F6645;
-	border-width:7px;
+	border-top: 4px solid #858A8A;
+	border-bottom: 4px solid #858A8A;
+	background-color: #B6BBBB;
 }
 
 #nav ul {
@@ -50,42 +38,47 @@ body{
 
 #nav li {
 	text-decoration: none;
-	color: black;
 	display: inline-block;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 24px;
 	position: relative;
-	text-transform:lowercase;
+	text-transform:uppercase;
 	text-align: center;
 }
 
 #nav a {
 	text-decoration: none;
-	color: black;
-	padding-top: 10px;
+	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 #nav a:hover {
-	color: #3ECB89;
+	color: #88F0EE;
 }
 
 #navwrap {
 	white-space: nowrap;
 }
 
+#sep{
+	width: 100%;
+	height: 2px;
+	background-color: #88F0EE;
+}
+
 h2 {
 	text-align: center;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 30px;
+	text-transform: uppercase;
 }
 
 #projectHead{
 	text-align: center;
 	font-family: Lobster;
 	font-size: 24px;
-	color: #3ECB89;
+	color: #88F0EE;
 }
 
 #blurbs{
@@ -100,7 +93,7 @@ h2 {
 }
 
 #blurbs a{
-  color: #3ECB89;
+  color: #88F0EE;
   text-decoration: none;
 }
 
@@ -110,21 +103,10 @@ h2 {
 	
 }
 
-#seperation{
-	padding: 0;
-	margin: 0;
-	width: 1000px;
-	margin-left: 0px;
-	margin-right: 0;
-	margin-bottom: 20px;
-	border-bottom:5px dotted  #3ECB89;
-	border-width:2px;
-}
-
 h3{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 26px;
-	color: #3ECB89;
+	color: #88F0EE;
 	margin-left: 300px;
 	margin-right: 300px;
 }
@@ -134,9 +116,4 @@ h3{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 18px;
 	margin-left: 50px;
-}
-
-#projectPic {
-	float: right;
-	margin-right: 50px;
 }
