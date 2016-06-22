@@ -4,13 +4,32 @@ body{
 }
 
 #header{
-	font-family: Lobster;
+	font-family: Raleway, sans-serif;
 	text-align: center;
 	font-size: 48px;
 	color: white;
-	background-color: #88F0EE;
-	height: 35%;
+	height: 20%;
+	animation: colorchange 30s infinite alternate; 
+    -webkit-animation: colorchange 30s infinite alternate; /* Chrome and Safari */
+	}	
+
+@keyframes colorchange{
+    0%   {background: #54CCC2;}
+    25%  {background: #11998E;}
+    50%  {background: #83FFAF;}
+    75%  {background: #FFC3D9;}
+    100% {background: #CC54BD;}
 }
+
+ /* Safari and Chrome - necessary duplicate */
+@-webkit-keyframes colorchange{
+    0%   {background: #54CCC2;}
+    25%  {background: #11998E;}
+    50%  {background: #83FFAF;}
+    75%  {background: #FFC3D9;}
+    100% {background: #CC54BD;}
+}
+
 #title {
 	float: left;
 }
@@ -26,9 +45,6 @@ body{
 
 #nav {
 	width: 100%;
-	border-top: 4px solid #858A8A;
-	border-bottom: 4px solid #858A8A;
-	background-color: #B6BBBB;
 }
 
 #nav ul {
@@ -39,7 +55,7 @@ body{
 #nav li {
 	text-decoration: none;
 	display: inline-block;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Slabo 27px', serif;
 	font-size: 24px;
 	position: relative;
 	text-transform:uppercase;
@@ -48,7 +64,7 @@ body{
 
 #nav a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -69,7 +85,7 @@ body{
 
 h2 {
 	text-align: center;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Slabo 27px', serif;
 	font-size: 30px;
 	text-transform: uppercase;
 }
@@ -88,7 +104,7 @@ h2 {
 }
 
 #blurbs p{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Slabo 27px', serif;
 	font-size: 24px;
 }
 
@@ -104,7 +120,7 @@ h2 {
 }
 
 h3{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Slabo 27px', serif;
 	font-size: 26px;
 	color: #88F0EE;
 	margin-left: 300px;
@@ -113,7 +129,7 @@ h3{
 
 
 #project p{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Slabo 27px', serif;
 	font-size: 18px;
 	margin-left: 50px;
 }
