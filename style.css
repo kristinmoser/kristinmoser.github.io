@@ -45,6 +45,13 @@ h2.titles{
 
 }
 
+h3.titles{
+	margin-top: 0px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: Raleway, sans-serif;
+}
 .gmail{
 
 }
