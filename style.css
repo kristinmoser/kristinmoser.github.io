@@ -7,6 +7,19 @@ body{
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+#header{
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	font-size: 48px;
+	color: white;
+	height: 20%;
+	animation: colorchange 30s infinite alternate; 
+    -webkit-animation: colorchange 30s infinite alternate; /* Chrome and Safari */
+	}	
+
+>>>>>>> origin/master
 @keyframes colorchange{
     0%   {background: #54CCC2;}
     25%  {background: #11998E;}
@@ -24,6 +37,7 @@ body{
     100% {background: #CC54BD;}
 }
 
+<<<<<<< HEAD
 h1.name{
 	margin-top: 20%;
 	margin-bottom: 0px;
@@ -58,6 +72,10 @@ h2.titles{
 
 .spotify{
 
+=======
+#title {
+	float: left;
+>>>>>>> origin/master
 }
 
 .linkedin{
@@ -69,10 +87,15 @@ h2.titles{
 	padding: 5px;
 	
 }
+<<<<<<< HEAD
 
 /*
 #title {
 	float: left;
+=======
+#links{
+	text-align: center;
+>>>>>>> origin/master
 }
 
 
@@ -166,4 +189,7 @@ h3{
 	font-size: 18px;
 	margin-left: 50px;
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> origin/master
