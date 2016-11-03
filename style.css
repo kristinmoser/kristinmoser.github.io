@@ -1,6 +1,6 @@
 
 body{
-	background-color: #8653A2;
+	background-color: #009688;
 	height: 100%;
 	text-align: center;
 }
@@ -28,24 +28,24 @@ a.menuItem{
 	font-family: Raleway, sans-serif;
 }
 @keyframes colorchange{
-    0%  {color: #FFFA0B;}
-    34%  {color: #B3F40B;}
-    100% {color: #0E8BB5;}
+	0%  {color: #F8BBD0;}
+	34%  {color: #F06292;}
+	100% {color: #D81B60;}
 }
 
  /* Safari and Chrome - necessary duplicate */
 @-webkit-keyframes colorchange{
-	0%  {color: #FFFA0B;}
-	34%  {color: #B3F40B;}
-	100% {color: #0E8BB5;}
+	0%  {color: #F8BBD0;}
+	34%  {color: #F06292;}
+	100% {color: #D81B60;}
 }
 
 h1.name{
 	margin-top: 10%;
 	margin-bottom: 0px;
 	text-align: center;
-	color: #2FA0BA;
-/*	animation: colorchange 30s infinite alternate;
+	color: white;
+	/*animation: colorchange 30s infinite alternate;
 		-webkit-animation: colorchange 30s infinite alternate; /* Chrome and Safari */
 	font-size: 100px;
 	font-family: Raleway, sans-serif;
@@ -55,7 +55,7 @@ h1.name{
 h2.titles{
 	margin-top: 0px;
 	text-align: center;
-	color: #541F71;
+	color: #EEFF41 ;
 	font-size: 40px;
 	font-family: Raleway, sans-serif;
 
