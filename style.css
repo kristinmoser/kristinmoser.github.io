@@ -1,186 +1,97 @@
 
 body{
-	background-color: #009688;
+	background-color: #5D737E;
 	height: 100%;
 	text-align: center;
 }
-
-#draw-shapes{
-	width: 100%;
-	height: 100%;
+.pagesOpaque{
+	opacity: 0.7;
+	padding: 5px;
+}
+.pagesNot{
+	padding: 5px;
+}
+.menu{
+	color:#FFDF64;
+	margin-bottom: 0px;
+	font-family: 'Fredoka One', cursive;
+	font-size : 20px;
 }
 
+/*FRONT PAGE CSS */
+#front-page{
 
-#arrowDIV{
-	opacity: 0.4;
 }
-.bar{
-	width: 100%;
-	height: 40px;
-	display: inline-block;
-}
-
-a.menuItem{
-	text-decoration: none;
-	color: #EEFF41;
-	font-size: 36px;
-	padding-right: 20px;
-	font-family: Raleway, sans-serif;
-}
-@keyframes colorchange{
-	0%  {color: #F8BBD0;}
-	34%  {color: #F06292;}
-	100% {color: #D81B60;}
-}
-
- /* Safari and Chrome - necessary duplicate */
-@-webkit-keyframes colorchange{
-	0%  {color: #F8BBD0;}
-	34%  {color: #F06292;}
-	100% {color: #D81B60;}
-}
-
 h1.name{
+	position: relative;
 	margin-top: 10%;
 	margin-bottom: 0px;
 	text-align: center;
-	color: white;
+	color: #7FC6A4;
 	/*animation: colorchange 30s infinite alternate;
 		-webkit-animation: colorchange 30s infinite alternate; /* Chrome and Safari */
 	font-size: 100px;
-	font-family: Raleway, sans-serif;
+	font-family: 'Fredoka One', cursive;
 
 }
 
 h2.titles{
 	margin-top: 0px;
 	text-align: center;
-	color: #EEFF41 ;
+	color: white;
 	font-size: 40px;
-	font-family: Raleway, sans-serif;
+	font-family: 'League Script', cursive;
 
 }
 
 h3.titles{
 	margin-top: 0px;
 	text-align: center;
-	color: white;
+	color: #ED8957;
 	font-size: 20px;
-	font-family: Raleway, sans-serif;
+	font-family: 'Roboto Mono', monospace;
 }
 
 }
 #title {
 	float: left;
-
+}
 .links{
+	text-decoration: none;
 	text-align: center;
 	padding: 5px;
 
 }
 
 
-/*
-#title {
-	float: left;
-=======
-#links{
-	text-align: center;
->>>>>>> origin/master
+/*ABOUT PAGE CSS */
+#about-page{
+
 }
-
-
-#nav {
-	width: 100%;
+.header{
+	margin-bottom : 0px;
+	color:#7FC6A4;
+	font-size: 70px;
+	font-family: 'Fredoka One', cursive;
+	text-decoration: underline;
 }
-
-#nav ul {
-	list-style-type: none;
-	text-align: center;
-}
-
-#nav li {
-	text-decoration: none;
-	display: inline-block;
-	font-family: 'Slabo 27px', serif;
-	font-size: 24px;
+#blurb{
+	margin:auto;
 	position: relative;
-	text-transform:uppercase;
-	text-align: center;
+	width: 70%;
+	text-align: left;
 }
-
-#nav a {
-	text-decoration: none;
-	color: black;
-	padding-left: 20px;
-	padding-right: 20px;
+p{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	color: white;
 }
-
-#nav a:hover {
-	color: #88F0EE;
+#blurb em{
+	color: #FFDF64;	
 }
-
-#navwrap {
-	white-space: nowrap;
+#blurb a{
+	color: #FFDF64;
 }
-
-#sep{
-	width: 100%;
-	height: 2px;
-	background-color: #88F0EE;
-}
-
-h2 {
-	text-align: center;
-	font-family: 'Slabo 27px', serif;
-	font-size: 30px;
-	text-transform: uppercase;
-}
-
-#projectHead{
-	text-align: center;
-	font-family: Lobster;
-	font-size: 24px;
-	color: #88F0EE;
-}
-
-#blurbs{
-	margin: 0;
-	margin-left: 300px;
-	margin-right: 300px;
-}
-
-#blurbs p{
-	font-family: 'Slabo 27px', serif;
-	font-size: 24px;
-}
-
-#blurbs a{
-  color: #88F0EE;
-  text-decoration: none;
-}
-
-#blurbs a:hover{
-	color: black;
-	text-decoration: none;
+#resume-page{
 
 }
-
-h3{
-	font-family: 'Slabo 27px', serif;
-	font-size: 26px;
-	color: #88F0EE;
-	margin-left: 300px;
-	margin-right: 300px;
-}
-
-
-#project p{
-	font-family: 'Slabo 27px', serif;
-	font-size: 18px;
-	margin-left: 50px;
-}
-<<<<<<< HEAD
-*/
-=======
->>>>>>> origin/master
