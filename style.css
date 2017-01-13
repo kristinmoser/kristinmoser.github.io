@@ -1,0 +1,97 @@
+
+body{
+	background-color: #5D737E;
+	height: 100%;
+	text-align: center;
+}
+.pagesOpaque{
+	opacity: 0.7;
+	padding: 5px;
+}
+.pagesNot{
+	padding: 5px;
+}
+.menu{
+	color:#FFDF64;
+	margin-bottom: 0px;
+	font-family: 'Fredoka One', cursive;
+	font-size : 20px;
+}
+
+/*FRONT PAGE CSS */
+#front-page{
+
+}
+h1.name{
+	position: relative;
+	margin-top: 10%;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #7FC6A4;
+	/*animation: colorchange 30s infinite alternate;
+		-webkit-animation: colorchange 30s infinite alternate; /* Chrome and Safari */
+	font-size: 100px;
+	font-family: 'Fredoka One', cursive;
+
+}
+
+h2.titles{
+	margin-top: 0px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: 'League Script', cursive;
+
+}
+
+h3.titles{
+	margin-top: 0px;
+	text-align: center;
+	color: #ED8957;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+}
+#title {
+	float: left;
+}
+.links{
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+
+}
+
+
+/*ABOUT PAGE CSS */
+#about-page{
+
+}
+.header{
+	margin-bottom : 0px;
+	color:#7FC6A4;
+	font-size: 70px;
+	font-family: 'Fredoka One', cursive;
+	text-decoration: underline;
+}
+#blurb{
+	margin:auto;
+	position: relative;
+	width: 70%;
+	text-align: left;
+}
+p{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	color: white;
+}
+#blurb em{
+	color: #FFDF64;	
+}
+#blurb a{
+	color: #FFDF64;
+}
+#resume-page{
+
+}
