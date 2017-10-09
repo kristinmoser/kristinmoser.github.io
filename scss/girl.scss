@@ -1,0 +1,237 @@
+@fa-font-path:   "../font";
+// colors
+$skin-color-light: #d4aa78;
+$skin-color-dark: #bc9669;
+$hair-color: #38230a;
+$text-dark: #152735;
+$page-color: #e6ebf4;
+$accent-color: #B4436C;
+// fonts
+$roboto: 'Roboto Mono', monospace;
+$vt: 'VT323',
+monospace;
+$cousine: 'cousine One', cursive;
+$cousine: 'Cousine', monospace;
+//sizes
+$text-l: 45px;
+$text-m: 30px;
+$text-s: 20px;
+$space: 6px;
+$space-half: 3px;
+body {
+  background: $page-color;
+  font-family: $cousine;
+}
+.padding--bottom {
+  padding-bottom: $space;
+}
+.row {
+  margin-top: $space*2;
+  margin-bottom: $space*2;
+}
+.col {
+  text-align: center;
+  margin: auto;
+}
+.links {
+  text-decoration: none;
+  img {
+    margin-right: $space;
+    margin-top: $space*2;
+    width: 30px;
+    height: 30px;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    // -webkit-animation-iteration-count: infinite;
+  }
+}
+.nav {
+  background: rgba(38, 70, 83, 0.3);
+  width: auto;
+  margin-bottom: $space*3;
+  transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: 2px 2px 5px $text-dark;
+  }
+  .nav-link {
+    text-decoration: none;
+    font-size: $text-m;
+    color: $accent-color;
+  }
+}
+.center-me {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.info {
+  display: inline-block;
+}
+.section--title {
+  text-align: center;
+  font-family: $cousine;
+  font-size: $text-l;
+  color: $text-dark;
+  margin-bottom: $space;
+}
+.comments {
+  text-align: center;
+  font-family: $cousine;
+  font-size: $text-s;
+  color: $page-color;
+  margin-bottom: 0;
+}
+.title {
+  @extend .comments;
+  color: $accent-color;
+  margin-bottom: $space;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  z-index: -10;
+  width: 400px;
+  height: 300px;
+}
+.circle {
+  position: relative;
+  margin: auto;
+  z-index: -12;
+  top: 7%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: $accent-color;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 0 $text-dark;
+}
+.hair {
+  @extend .center-me;
+  top: 14%;
+  width: 26%;
+  height: 47%;
+  background: $hair-color;
+  border-radius: 4em 4em 0 0;
+  overflow: hidden;
+}
+.hair-swoop {
+  @extend .center-me;
+  top: -20%;
+  right: 10%;
+  width: 100%;
+  height: 50%;
+  background: $hair-color;
+  border-radius: 50%;
+  z-index: 4;
+  transform: rotate(-35deg);
+}
+.head {
+  @extend .center-me;
+  top: 16.5%;
+  width: 24%;
+  height: 40%;
+  background: $skin-color-light;
+  border-radius: 50%;
+}
+.head-copy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: $skin-color-light;
+  border-radius: 50%;
+  z-index: 2;
+}
+$ear-space: -7%;
+.ear-left {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: $ear-space;
+  top: 40%;
+  background: $skin-color-light;
+  border-radius: 50%;
+  z-index: 1;
+}
+.ear-right {
+  @extend .ear-left;
+  left: auto;
+  right: $ear-space;
+}
+.inner-ear {
+  position: absolute;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background: $skin-color-dark;
+}
+$pupil-space: 27%;
+.eyebrow-left {
+  position: absolute;
+  top: 38%;
+  background: $hair-color;
+  left: $pupil-space - 2;
+  z-index: 3;
+  width: 10%;
+  height: 2%;
+  transform: rotate(-5deg);
+}
+.eyebrow-right {
+  @extend .eyebrow-left;
+  left: auto;
+  right: $pupil-space - 2;
+  transform: rotate(5deg);
+}
+.pupil-left {
+  position: absolute;
+  width: 9%;
+  height: 9%;
+  top: 43%;
+  left: $pupil-space;
+  border-radius: 50%;
+  background: #000000;
+  z-index: 3;
+}
+.pupil-right {
+  @extend .pupil-left;
+  left: auto;
+  right: $pupil-space;
+}
+.nose {
+  @extend .center-me;
+  width: 17%;
+  height: 22%;
+  top: 40%;
+  background-color: $skin-color-light;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid;
+  border-bottom-color: $skin-color-dark;
+  border-top-color: $skin-color-light;
+  border-right-color: $skin-color-light;
+  border-left-color: $skin-color-light;
+  z-index: 3;
+}
+$mouth-size :16px;
+.mouth {
+  @extend .center-me;
+  height: $mouth-size;
+  width: $mouth-size * 2;
+  border-bottom-left-radius: $mouth-size * 2;
+  border-bottom-right-radius: $mouth-size * 2;
+  background-color: #000000;
+  z-index: 4;
+  top: 70%;
+  overflow: hidden;
+}
+.tongue {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #DB5461;
+  left: 30%;
+  top: 40%;
+  position: absolute;
+}

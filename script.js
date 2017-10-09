@@ -1,36 +1,50 @@
+    var type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
 
-var main = function() {
-  	$('.bar').hide();
-    $('#about-page').hide();
-  	$('#resume-page').hide();
+    PIXI.utils.sayHello(type)
+    //Create the renderer
+  var colors = [0x264653, 0x2A9D8F, 0xE9C46A, 0xF4A261, 0xE76F51];
+  var circles = [];
+  var renderer = PIXI.autoDetectRenderer(
+    1000, 800,
+    {antialias: false, transparent: true, resolution: 1}
+  );
+//Add the canvas to the HTML document
+document.getElementById('js').appendChild(renderer.view);
+    renderer.view.style.position = 'absolute';
+    renderer.view.style.zIndex = -11;
+    renderer.view.style.width = '100%';
+    renderer.view.style.height = '100%';
+    renderer.view.style.left = 0;
+    renderer.view.style.right = 0;
+    renderer.view.style.margin = 'auto';
 
-  $('#front').click(function(){
-  	$('#about').removeClass('pagesNot').addClass('pagesOpaque');
-  	$('#resume').removeClass('pagesNot').addClass('pagesOpaque');
-  	$('#about-page').hide();
-  	$('#resume-page').hide();
-  	$('#front-page').show();
-  	$(this).removeClass('pagesOpaque').addClass('pagesNot');
-  });
-  $('#about').click(function(){
-  	$('#front').removeClass('pagesNot').addClass('pagesOpaque');
-  	$('#resume').removeClass('pagesNot').addClass('pagesOpaque');
-  	$('#front-page').hide();
-  	$('#resume-page').hide();
-  	$('#about-page').show();
-  	$(this).removeClass('pagesOpaque').addClass('pagesNot');
-  });
-  $('#resume').click(function(){
-  	$('#about-page').hide();
-  	$('#front-page').hide();
-  	$('#resume-page').show();
-  	$('#about').removeClass('pagesNot').addClass('pagesOpaque');
-  	$('#front').removeClass('pagesNot').addClass('pagesOpaque');
-  	$(this).removeClass('pagesOpaque').addClass('pagesNot');
-  });
+//Create a container object called the `stage`
+var stage = new PIXI.Container();
+for (var i = 0; i < 200; ++i){
+  var circle = new PIXI.Graphics();
+  circle.beginFill(colors[Math.floor((Math.random() * 5))]);
+  circle.drawCircle(0, 0, 1.6);
+  circle.endFill();
+  circle.x = Math.floor((Math.random() * renderer.width));
+  circle.y = Math.floor((Math.random() * renderer.height));
+  circle.speed = Math.ceil(Math.random() * 5);
+  circle.direction = Math.random() < 0.5 ? -1 : 1;
+  stage.addChild(circle);
+  circles.push(circle);
+}
 
+renderer.render(stage);
 
-};
-
-$( document ).ready(main);
-
+function gameLoop() {
+  //Loop this function at 60 frames per second
+  requestAnimationFrame(gameLoop);
+  for (var i =0; i < circles.length; ++i){
+    circles[i].x += circles[i].speed * circles[i].direction;
+    circles[i].y += circles[i].speed * Math.random() < 0.5 ? -1 : 1;
+  }
+  renderer.render(stage);
+}
+gameLoop();
