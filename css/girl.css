@@ -1,6 +1,6 @@
 @fa-font-path :   "../font";
 body {
-  background: #e6ebf4;
+  background: #FFF2F1;
   font-family: "Cousine", monospace; }
 
 .padding--bottom {
@@ -10,31 +10,35 @@ body {
   margin-top: 12px;
   margin-bottom: 12px; }
 
+.space-around {
+  margin: 60px; }
+
 .col {
   text-align: center;
   margin: auto; }
 
 .links {
-  text-decoration: none; }
-  .links img {
-    margin-right: 6px;
-    margin-top: 12px;
-    width: 30px;
-    height: 30px;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s; }
+  text-decoration: none;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s; }
+  .links:hover {
+    text-decoration: none; }
 
 .nav {
-  background: rgba(38, 70, 83, 0.3);
-  width: auto;
-  margin-bottom: 18px;
-  transition: box-shadow 0.5s ease; }
+  background: #152735;
+  transition: background-color 0.5s ease;
+  text-align: center; }
   .nav:hover {
-    box-shadow: 2px 2px 5px #152735; }
+    background-color: #FFF2F1; }
   .nav .nav-link {
     text-decoration: none;
     font-size: 30px;
-    color: #B4436C; }
+    transition: color 0.5s ease;
+    color: #FFF2F1; }
+    .nav .nav-link:hover {
+      color: #B4436C;
+      text-decoration: underline;
+      text-decoration-color: #007bff; }
 
 .center-me, .hair, .hair-swoop, .head, .nose, .mouth {
   position: absolute;
@@ -56,7 +60,7 @@ body {
   text-align: center;
   font-family: "Cousine", monospace;
   font-size: 20px;
-  color: #e6ebf4;
+  color: #FFF2F1;
   margin-bottom: 0; }
 
 .title {

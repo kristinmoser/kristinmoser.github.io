@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
         templateUrl : "resume.pdf"
     })
     .when("/about", {
-        templateUrl : "about.html"
+        templateUrl : "/about.html"
     })
     .when("/projects", {
         templateUrl : "projects.html"

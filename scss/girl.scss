@@ -4,7 +4,7 @@ $skin-color-light: #d4aa78;
 $skin-color-dark: #bc9669;
 $hair-color: #38230a;
 $text-dark: #152735;
-$page-color: #e6ebf4;
+$page-color: #FFF2F1;
 $accent-color: #B4436C;
 // fonts
 $roboto: 'Roboto Mono', monospace;
@@ -29,34 +29,38 @@ body {
   margin-top: $space*2;
   margin-bottom: $space*2;
 }
+.space-around {
+  margin: $space*10;
+}
 .col {
   text-align: center;
   margin: auto;
 }
 .links {
   text-decoration: none;
-  img {
-    margin-right: $space;
-    margin-top: $space*2;
-    width: 30px;
-    height: 30px;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
-    // -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  &:hover {
+    text-decoration: none;
   }
 }
 .nav {
-  background: rgba(38, 70, 83, 0.3);
-  width: auto;
-  margin-bottom: $space*3;
-  transition: box-shadow 0.5s ease;
+  background: $text-dark;
+  transition: background-color 0.5s ease;
+  text-align: center;
   &:hover {
-    box-shadow: 2px 2px 5px $text-dark;
+    background-color: $page-color;
   }
   .nav-link {
     text-decoration: none;
     font-size: $text-m;
-    color: $accent-color;
+    transition: color 0.5s ease;
+    color: $page-color;
+     &:hover {
+        color: $accent-color;
+        text-decoration: underline;
+        text-decoration-color: #007bff;
+      }
   }
 }
 .center-me {
