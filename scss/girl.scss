@@ -4,7 +4,7 @@ $skin-color-light: #d4aa78;
 $skin-color-dark: #bc9669;
 $hair-color: #38230a;
 $text-dark: #152735;
-$page-color: #FFF2F1;
+$page-color: #F9E9E8;
 $accent-color: #B4436C;
 // fonts
 $roboto: 'Roboto Mono', monospace;
@@ -36,8 +36,21 @@ body {
   text-align: center;
   margin: auto;
 }
+.header{
+  color: $text-dark;
+}
+.blurb {
+  text-align: left;
+  width: 60%;
+  padding: $space*3;
+  color: $text-dark;
+  height: 75%;
+  margin: auto;
+  background-color: rgb(252, 248, 244);
+}
 .links {
   text-decoration: none;
+  display: inline-block;
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s;
   &:hover {

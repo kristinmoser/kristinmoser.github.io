@@ -1,6 +1,6 @@
 @fa-font-path :   "../font";
 body {
-  background: #FFF2F1;
+  background: #F9E9E8;
   font-family: "Cousine", monospace; }
 
 .padding--bottom {
@@ -17,8 +17,21 @@ body {
   text-align: center;
   margin: auto; }
 
+.header {
+  color: #152735; }
+
+.blurb {
+  text-align: left;
+  width: 60%;
+  padding: 18px;
+  color: #152735;
+  height: 75%;
+  margin: auto;
+  background-color: #fcf8f4; }
+
 .links {
   text-decoration: none;
+  display: inline-block;
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s; }
   .links:hover {
@@ -29,12 +42,12 @@ body {
   transition: background-color 0.5s ease;
   text-align: center; }
   .nav:hover {
-    background-color: #FFF2F1; }
+    background-color: #F9E9E8; }
   .nav .nav-link {
     text-decoration: none;
     font-size: 30px;
     transition: color 0.5s ease;
-    color: #FFF2F1; }
+    color: #F9E9E8; }
     .nav .nav-link:hover {
       color: #B4436C;
       text-decoration: underline;
@@ -60,7 +73,7 @@ body {
   text-align: center;
   font-family: "Cousine", monospace;
   font-size: 20px;
-  color: #FFF2F1;
+  color: #F9E9E8;
   margin-bottom: 0; }
 
 .title {
