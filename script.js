@@ -29,9 +29,8 @@ for (var i = 0; i < 200; ++i){
   circle.drawCircle(0, 0, 1.6);
   circle.endFill();
   circle.x = Math.floor((Math.random() * renderer.width));
-  circle.y = Math.floor((Math.random() * renderer.height));
-  circle.speed = Math.ceil(Math.random() * 5);
-  circle.direction = Math.random() < 0.5 ? -1 : 1;
+  circle.y = -(Math.random() * 1000);
+  circle.speed = Math.random() * 2;
   stage.addChild(circle);
   circles.push(circle);
 }
@@ -42,8 +41,10 @@ function gameLoop() {
   //Loop this function at 60 frames per second
   requestAnimationFrame(gameLoop);
   for (var i =0; i < circles.length; ++i){
-    circles[i].x += circles[i].speed * circles[i].direction;
-    circles[i].y += circles[i].speed * Math.random() < 0.5 ? -1 : 1;
+    circles[i].y += 1;
+    if (circles[i].y > 1000) {
+      circles[i].y = circles[i].y = -(Math.random() * 1000);
+    }
   }
   renderer.render(stage);
 }
