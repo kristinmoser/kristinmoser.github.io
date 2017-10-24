@@ -8,6 +8,6 @@ app.config(function($routeProvider) {
         templateUrl : "/about.html"
     })
     .when("/projects", {
-        templateUrl : "projects.html"
+        templateUrl : "/projects.html"
     });
 });
