@@ -4,9 +4,6 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "index.html"
     })
-    .when("/resume", {
-        templateUrl : "/Kristin_Moser_Resume.pdf"
-    })
     .when("/about", {
         templateUrl : "/about.html"
     })
