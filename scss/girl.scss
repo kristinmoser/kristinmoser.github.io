@@ -6,6 +6,7 @@ $hair-color: #38230a;
 $text-dark: #152735;
 $page-color: #F9E9E8;
 $accent-color: #B4436C;
+$blue: #007bff;
 // fonts
 $roboto: 'Roboto Mono', monospace;
 $vt: 'VT323',
@@ -21,12 +22,6 @@ $space-half: 3px;
 body {
   background: $page-color;
   font-family: $cousine;
-}
-#js {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
 }
 .padding--bottom {
   padding-bottom: $space;
@@ -45,13 +40,21 @@ body {
 .header{
   color: $text-dark;
 }
+.text-pink {
+  color: $accent-color;
+}
+.text-small {
+  font-size: 12px;
+  float: right;
+}
 .blurb {
   text-align: left;
-  width: 60%;
-  padding: $space*3;
+  width: 75%;
+  padding: $space*4;
   color: $text-dark;
   height: 75%;
   margin: auto;
+  font-size: $text-s;
   background-color: rgb(252, 248, 244);
 }
 .links {
@@ -78,7 +81,7 @@ body {
      &:hover {
         color: $accent-color;
         text-decoration: underline;
-        text-decoration-color: #007bff;
+        text-decoration-color: $blue;
       }
   }
 }
